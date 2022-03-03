@@ -35,7 +35,7 @@ module.exports = {
             email: req.body.email,
             address: req.body.address,
             phone: req.body.phone,
-            favorite: String(req.body.favorite).toLowerCase === "true",
+            favorite: String(req.body.favorite).toLowerCase() === "true",
         })
 
         const [err, document] = await handlePromise(contact.save())
