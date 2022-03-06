@@ -136,7 +136,7 @@ module.exports = {
             return next(new BadRequestError(500, "An error occurred while removing all contacts"))
         }
 
-        return res.send({ message: `${data.deleteCount} contact were deleted successfully` })
+        return res.send({ message: `${data.deletedCount} contact were deleted successfully` })
     },
 
 }
